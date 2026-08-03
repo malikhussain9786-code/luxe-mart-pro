@@ -1,0 +1,98 @@
+// Demo brand roster for Luxe Mart Pro.
+// Each brand operates in 5-6 categories, matching the spec.
+// "categoryIds" reference category.id values from categories.js.
+
+export const brands = [
+  {
+    id: "noir-co",
+    slug: "noir-co",
+    name: "Noir & Co.",
+    tagline: "Tailored menswear for the modern gentleman.",
+    accent: "#14213D",
+    founded: 2011,
+    country: "Italy",
+    verified: true,
+    categoryIds: ["mens-fashion", "shoes", "accessories", "sports"],
+  },
+  {
+    id: "etoile-paris",
+    slug: "etoile-paris",
+    name: "Étoile Paris",
+    tagline: "Parisian elegance, reimagined for every day.",
+    accent: "#6E3AA8",
+    founded: 2016,
+    country: "France",
+    verified: true,
+    categoryIds: ["womens-fashion", "shoes", "accessories"],
+  },
+  {
+    id: "meridian",
+    slug: "meridian",
+    name: "Meridian",
+    tagline: "Precision eyewear and fine accessories.",
+    accent: "#C6A15B",
+    founded: 2014,
+    country: "Switzerland",
+    verified: true,
+    categoryIds: ["accessories", "mens-fashion", "womens-fashion"],
+  },
+  {
+    id: "urban-form",
+    slug: "urban-form",
+    name: "Urban Form",
+    tagline: "Minimalist footwear built for the city.",
+    accent: "#1F7A5C",
+    founded: 2019,
+    country: "Germany",
+    verified: true,
+    categoryIds: ["shoes", "sports", "mens-fashion", "womens-fashion"],
+  },
+  {
+    id: "maison-devereux",
+    slug: "maison-devereux",
+    name: "Maison Devereux",
+    tagline: "Leather goods crafted for a lifetime.",
+    accent: "#A8203D",
+    founded: 2008,
+    country: "France",
+    verified: true,
+    categoryIds: ["accessories", "womens-fashion", "shoes"],
+  },
+  {
+    id: "forge-athletic",
+    slug: "forge-athletic",
+    name: "Forge Athletic",
+    tagline: "Performance gear for serious training.",
+    accent: "#14213D",
+    founded: 2017,
+    country: "USA",
+    verified: true,
+    categoryIds: ["sports", "shoes", "mens-fashion", "womens-fashion"],
+  },
+  {
+    id: "heritage",
+    slug: "heritage",
+    name: "Héritage",
+    tagline: "Swiss watchmaking, quietly extraordinary.",
+    accent: "#C6A15B",
+    founded: 1998,
+    country: "Switzerland",
+    verified: true,
+    categoryIds: ["accessories"],
+  },
+  {
+    id: "terroir-fine-foods",
+    slug: "terroir-fine-foods",
+    name: "Terroir Fine Foods",
+    tagline: "Artisan grocery, sourced with intention.",
+    accent: "#1F7A5C",
+    founded: 2020,
+    country: "UK",
+    verified: true,
+    categoryIds: ["grocery-food"],
+  },
+];
+
+export function getBrandBySlug(slug) {
+  return brands.find((b) => b.slug === slug);
+}
